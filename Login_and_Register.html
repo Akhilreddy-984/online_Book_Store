@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            register
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="formvalidate.js"></script> 
+        <style> 
+            * { 
+                box-sizing: border-box; 
+            } 
+            body{
+                background-color: lightgrey;
+            }
+ 
+            /* CSS property for header section */ 
+            .header { 
+                background-color: green; 
+                padding: 15px; 
+                text-align: center; 
+            } 
+              
+            /* CSS property for nevigation menu */ 
+            .nav_menu { 
+                overflow: hidden; 
+                background-color: #333; 
+                font-size:22px;
+            } 
+            .nav_menu a { 
+                float: left; 
+                display: block; 
+                color: white; 
+                text-align: center; 
+                padding: 14px 16px; 
+                text-decoration: none;
+ 
+            } 
+            .nav_menu a:hover { 
+                background-color: white; 
+                color: green; 
+            } 
+
+       .footer { 
+                background-color: green;
+                 float:left;
+                 bottom:0; 
+                display:block;
+                padding: 15px; 
+                text-align: center;
+                width:100% 
+            }
+             
+              
+
+
+ 
+        </style> 
+    </head> 
+      
+    <body> 
+          
+        <!-- header of website layout -->
+        <div class = "header"> 
+            <i class="material-icons" style="font-size:60px;color:rgb(39, 28, 28);">book</i> 
+            <h2 style = "color:white;font-size:200%"> 
+                AMAZON KINDLE
+            </h2> 
+        </div> 
+          
+        <!-- nevigation menu of website layout -->
+        <div class = "nav_menu"> 
+            <a href = "index.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">home</i>Home</a> 
+            <a href = "Login_and_Register.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">login</i>Login and register</a>  
+            <a href = "bookscatalog.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">book</i>Boooks Catalog</a>
+            <a href = "#"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">shopping_cart</i>cart</a> 
+        </div>
+
+        
+
+        
+        <form style="margin-left:500px" action="cart.html" onsubmit="return finalvalidate()">
+           
+            <h1 style="color:tomato">Login to buy</h1>
+            <img width="130" src="images/amazon.jpg"><br><br>
+            <input type="text" id="uname" placeholder="username" onchange="validate1()"><br>
+            <label id="invalid1" style="color:red;visibility:hidden">Invalid username</label><br>
+            <label id="valid1" style="color:green"></label><br>
+            
+            <input type="text" id="eid" placeholder="email-ID" onchange="validate2()"><br>
+            <label id="invalid2" style="color:red;visibility:hidden">Invalid ID</label><br>
+            <label id="valid2" style="color:green"></label><br>
+
+            <input type="password" id="pwd" placeholder="password" onchange="validate3()"><br>
+            <label id="invalid3" style="color:red;visibility:hidden">Invalid Password</label><br>
+            <label id="valid3" style="color:green"></label><br>
+
+            <input type="password" id="cpwd" placeholder="confirmPassword" onchange="validate4()"><br>
+            <label id="invalid4" style="color:red;visibility:hidden">Password mismatch</label><br>
+            <label id="valid4" style="color:green"></label><br>
+
+            <input type="text" id="mno" placeholder="Mobileno." onchange="validate5()"><br>
+            <label id="invalid5" style="color:red;visibility:hidden">Invalid Mobileno</label><br>
+            <label id="valid5" style="color:green"></label><br>
+
+            <input type="submit"  value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <h1 style="margin-left:100px;font-size:28px">Are you a new user then signup or Register</h1>
+        <div style="margin-left:500px;font-size:28px">
+        
+            <a href="#register">Click Here to register</a>
+        </div>
+        
+        <div style="width:400px;margin-top: 200px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 500px; border:1px solid #000;">
+	<form style="background-color:#1ABC9C;" id="register">
+         <strong>First name:</strong><input type = "text" name = "first_name" STYLE="color:#5B2C6F;font-family: Verdana;font-weight:bold; font-size:12px;background-color: #F5B041;" />
+         <br>
+	<br>
+         <strong>Last name:</strong> <input type = "text" name = "last_name" STYLE="color:#5B2C6F;font-family: Verdana;font-weight:bold; font-size:12px;background-color: #F5B041;"/>
+	<br>
+	<br>
+	<strong>Mobile No.:</strong><input type="text" name="Mobile_no" STYLE="color:#5B2C6F;font-family: Verdana;font-weight:bold; font-size:12px;background-color: #F5B041;"/>
+	<br>
+	<br>
+
+	<strong>Gmail ID :</strong> <input type = "text" name = "user_id" STYLE="color:#5B2C6F;font-family: Verdana;font-weight:bold; font-size:12px;background-color: #F5B041;"/>
+         <br>
+	<br>
+         <strong>Password:</strong> <input type = "password" name = "password" STYLE="color:#5B2C6F;font-family: Verdana;font-weight:bold; font-size:12px;background-color: #F5B041;"/>
+	<br>
+	<br>
+	<strong>Address : </strong><br />
+         <textarea rows = "5" cols = "50" name = "description" STYLE="background-color: #F5B041">
+            Enter Valid address here...
+         </textarea>
+	<br>
+	<br>
+
+	<strong>Select Age:</strong><br />
+	<select name="Age">
+	<option selected value="20">17-20</option>
+	<option value="30">20-28</option>
+	</select>
+	<br>
+	<br>
+	<strong>Choose gender:</strong><br />
+	<input type="radio" name="gender" value="MALE" STYLE="color:#5B2C6F">Male
+	<br>
+	<br>
+	<input type="radio" name="gender" value="FEMALE" STYLE="color:#5B2C6F">Female
+	<br>
+	<br>
+	<br>
+	<br>
+	<b>Choose your Area of Interest:</b><br/>
+	<input type = "checkbox" name = "PYTHON" STYLE="color:#5B2C6F"> <b>Science-fiction</b>
+	<br>
+	<br>
+        <input type = "checkbox" name = "JAVA" STYLE="color:#5B2C6F"> <b>AutoBiography</b>
+	<br>
+	<br>
+	<input type = "checkbox" name = "C++" STYLE="color:#5B2C6F"> <b>Movies</b>
+	<br>
+	<br>
+        <input type = "checkbox" name = "C#" STYLE="color:#5B2C6F"><b>Documentry</b>
+	<br>
+	<br>
+	<input type="submit" value="SUBMIT" onclick="alert('Registered succesfully!')"/>
+	<br>
+	<br>
+	<input type="reset" value="RESET"/>
+	</form>
+</div>
+
+
+	
+        <div class = "footer"> 
+            <a href = "#">About</a><br> 
+            <a href = "#">Career</a><br> 
+            <a href = "#">Contact Us</a> 
+        </div> 
+    </body> 
+</html>   
+	

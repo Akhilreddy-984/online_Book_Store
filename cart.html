@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            register
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="confirm.js"></script>
+         
+        <style> 
+            * { 
+                box-sizing: border-box; 
+            } 
+ 
+            /* CSS property for header section */ 
+            .header { 
+                background-color: green; 
+                padding: 15px; 
+                text-align: center; 
+            } 
+            body{
+                background-color: lightgrey;
+            }
+              
+            /* CSS property for nevigation menu */ 
+            .nav_menu { 
+                overflow: hidden; 
+                background-color: #333; 
+                font-size:22px;
+            } 
+            .nav_menu a { 
+                float: left; 
+                display: block; 
+                color: white; 
+                text-align: center; 
+                padding: 14px 16px; 
+                text-decoration: none; 
+            } 
+            .nav_menu a:hover { 
+                background-color: white; 
+                color: green; 
+            } 
+
+       .footer { 
+                background-color: green;
+                 float:left;
+                 bottom:0; 
+                display:block;
+                padding: 15px; 
+                text-align: center;
+                width:100% 
+            }
+        
+             
+              
+
+
+ 
+        </style> 
+    </head> 
+      
+    <body> 
+          
+        <!-- header of website layout -->
+        <div class = "header">
+            <img style="width: 10%;height:10%" src="amazon.jpg"><br><br> 
+            <h2 style = "color:white;font-size:200%"> 
+                AMAZON KINDLE
+            </h2> 
+        </div> 
+          
+        <!-- nevigation menu of website layout -->
+        <div class = "nav_menu"> 
+            <a href = "index.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">home</i>Home</a>
+            <a href = "Login_and_Register.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">login</i>Login and register</a> 
+            <a href = "bookscatalog.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">book</i>Boooks Catalog</a> 
+            <a href = "#"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">shopping_cart</i>cart</a> 
+        </div>
+        <div style="width:400px;margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 500px; border:1px solid #000; background-color: lightgreen;">
+            <h1>Shopping cart</h1>
+            <form action="payment.html" onsubmit="return confirmed()">
+                <h2>Select any Book</h2>
+                <select id="bookname">
+                    <option value="None">None</option>
+                    <option value="New Delhi">AI</option>
+                <option value="Avengers">Avengers</option>
+                <option value="Bigdata">bigdata</option>
+                <option value="DataAnalysis">dataanalysis</option>
+                <option value="Harrypotter">harrypotter</option>
+                <option value="Python">python</option>
+                <option value="Sherlock">sherlockholmes</option>
+                <option value="Spiderman">spiderman</option>
+                <option value="Success..">success</option>
+                <option value="Think...">Think</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <h2>Quantity</h2>
+                <select id="quantity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="SUBMIT"><br><br>
+                <input type="reset" value="Reset">
+
+
+            </form>
+        </div>
+
+        <div class = "footer"> 
+            <a href = "#">About</a><br> 
+            <a href = "#">Career</a><br> 
+            <a href = "#">Contact Us</a> 
+        </div> 
+
+
+    </body>
+</html>

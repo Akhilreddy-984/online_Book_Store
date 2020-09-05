@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+        <title> 
+            Website Layout 
+        </title> 
+        <style> 
+            * { 
+                box-sizing: border-box; 
+            } 
+
+            body{
+                background-color: lightgrey;
+            }
+
+            @media screen and (max-width:600px) { 
+                .second, .first{ 
+                    width: 70%; 
+                } 
+            } 
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+              
+            /* CSS property for header section */ 
+            .header { 
+                background-color: green; 
+                padding: 15px; 
+                text-align: center; 
+            } 
+              
+            /* CSS property for nevigation menu */ 
+            .nav_menu { 
+                overflow: hidden; 
+                background-color: #333; 
+                font-size:22px;
+            } 
+            .nav_menu a { 
+                float: left; 
+                display: block; 
+                color: white; 
+                text-align: center; 
+                padding: 16px 16px; 
+                text-decoration: none; 
+            } 
+            .nav_menu a:hover { 
+                background-color: white; 
+                color: green; 
+            } 
+              
+            h2 { 
+                color:darkmagenta; 
+                text-align:center; 
+                font-size: 50px;;
+            } 
+       .footer { 
+                background-color: green;
+                 float:left;
+                 bottom:0; 
+                display:block;
+                padding: 15px; 
+                text-align: center;
+                width:100% 
+            } 
+              
+            .first{
+            width:40%;
+            border:15px solid green;
+            background-color:lightgrey;
+            padding:25px 10px 10px 10px;
+            margin:5%;
+            float:left;
+            }
+            .second{
+            width:40%;
+            border:15px solid green;
+            background-color:lightgrey;
+            padding:25px 10px 10px 10px;
+            margin:5%;
+            float:right;
+
+            }
+            h1{
+                font: size 28;
+                text-align:center;
+            }
+            .button {
+                background-color:#008CBA;; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin-left: 30%;
+                margin-bottom:15%;
+
+            }
+ 
+        </style> 
+    </head> 
+      
+    <body> 
+          
+        <!-- header of website layout -->
+        <div class = "header">
+            
+            <img style="width: 10%;height:10%" src="images/amazon.jpg"><br><br> 
+            <h2 style = "color:white;font-size:200%"> 
+                AMAZON KINDLE
+            </h2> 
+        </div> 
+          
+        <!-- nevigation menu of website layout -->
+        <div class = "nav_menu"> 
+            <a href = "index.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">home</i>Home</a>
+            <a href = "Login_and_Register.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">login</i>Login and register</a> 
+            <a href = "bookscatalog.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">book</i>Boooks Catalog</a> 
+            <a href = "#"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">shopping_cart</i>cart</a> 
+        </div> 
+        <h1>Featured Books and Best Seller</h1>
+        <!-- Content section of website layout -->
+            
+            <div class = "first"> 
+                <img src="images/sherlock.jpg">
+            </div>  
+              
+            <section class = "second"> 
+                <img src="images/success.jpg" >
+            </section> 
+              
+            <div class = "second"> 
+                <img src="images/harry.jpg">
+            </div>
+
+            <div class = "second"> 
+                <img src="images/think.jpg">
+            </div>
+            <h2>To Buy any of them click</h2>&nbsp;
+            <form id="buy" action="Login_and_Register.html" onsubmit="true">
+                <input type="submit"  value="BUY NOW" class="button">
+
+            </form>
+
+            
+        
+<div class = "footer"> 
+            <a href = "#">About</a><br> 
+            <a href = "#">Career</a><br> 
+            <a href = "#">Contact Us</a> 
+        </div> 
+    </body> 
+</html>                  

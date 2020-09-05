@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            register
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="formvalidate.js"></script> 
+        <style> 
+            * { 
+                box-sizing: border-box; 
+            } 
+ 
+            /* CSS property for header section */ 
+            .header { 
+                background-color: green; 
+                padding: 15px; 
+                text-align: center; 
+            }
+            body{
+                background-color: lightgrey;
+            } 
+              
+            /* CSS property for nevigation menu */ 
+            .nav_menu { 
+                overflow: hidden; 
+                background-color: #333; 
+                font-size:22px;
+            } 
+            .nav_menu a { 
+                float: left; 
+                display: block; 
+                color: white; 
+                text-align: center; 
+                padding: 14px 16px; 
+                text-decoration: none; 
+            } 
+            .nav_menu a:hover { 
+                background-color: white; 
+                color: green; 
+            } 
+
+       .footer { 
+                background-color: green;
+                 float:left;
+                 bottom:0; 
+                display:block;
+                padding: 15px; 
+                text-align: center;
+                width:100% 
+            }
+            img{
+                width: 90%;
+                height: 90%;
+
+            }
+            .grid-container { 
+            display: grid; 
+            grid-template-columns: auto auto auto; 
+            background-color: gray; 
+            grid-column-gap: 50px; 
+            grid-row-gap: 50px; 
+            padding: 5px; 
+        } 
+  
+        /* Designing all grid-items */ 
+        .grid-item { 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border: 1px solid black; 
+            padding: 20px; 
+            font-size: 15px; 
+            text-align: center; 
+        } 
+        h1{
+                font: size 28;
+                text-align:center;
+            }
+            .button {
+                background-color:#008CBA;; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin-left: 30%;
+                margin-bottom:15%;
+
+            }
+ 
+             
+              
+
+
+ 
+        </style> 
+    </head> 
+      
+    <body> 
+          
+        <!-- header of website layout -->
+        <div class = "header">
+            <img style="width: 10%;height:10%" src="images/amazon.jpg"><br><br> 
+            <h2 style = "color:white;font-size:200%"> 
+                AMAZON KINDLE
+            </h2> 
+        </div> 
+          
+        <!-- nevigation menu of website layout -->
+        <div class = "nav_menu"> 
+            <a href = "index.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">home</i>Home</a> 
+            <a href = "Login_and_Register.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">login</i>Login and register</a>  
+            <a href = "bookscatalog.html"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">book</i>Boooks Catalog</a>
+            <a href = "#"><i class="material-icons" style="font-size:30px;color:rgb(39, 28, 28);">shopping_cart</i>cart</a> 
+        </div>
+        <h1>Books available in stock Limited!!</h1>
+        <h1>On offer!! just ₹100 for each book</h1>
+        <div style="text-align:center;font-size:25px">
+            <a href="#buy">BUY NOW</a>
+        </div>
+        
+
+
+
+        <div class="grid-container"> 
+            <div class="grid-item"><img src="images/dataanalysis.jpg" ></div> 
+            <div class="grid-item"><img src="images/ai.jpg"></div> 
+            <div class="grid-item"><img src="images/avengers.jpg"></div> 
+            <div class="grid-item"><img src="images/sherlock.jpg"></div> 
+            <div class="grid-item"><img src="images/think.jpg"></div> 
+            <div class="grid-item"><img src="images/python.jpg"></div> 
+            <div class="grid-item"><img src="images/success.jpg"></div> 
+            <div class="grid-item"><img src="images/harry.jpg"></div> 
+            <div class="grid-item"><img src="images/bigdata.jpg"></div> 
+        </div> 
+
+        <h2>To Buy any of them click</h2>&nbsp;
+            <form id="buy" action="Login_and_Register.html" onsubmit="true">
+                <input type="submit"  value="BUY" class="button">
+
+            </form>
+            
+
+
+        <div class = "footer"> 
+            <a href = "#">About</a><br> 
+            <a href = "#">Career</a><br> 
+            <a href = "#">Contact Us</a> 
+        </div> 
+
+    </body>
+</html>
+
